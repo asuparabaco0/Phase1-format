@@ -131,14 +131,10 @@ footer{
     padding:90px 0;
     margin:0 auto;
 }
-/* 
-.title {
-    font-size: 18px;
-    font-style:italic;
-}
- */
+
 .title-b{
     font-weight: bold;
+   
 }
 
 .title::before{
@@ -156,6 +152,7 @@ footer{
     border-top:1px solid #191919;
     content:"";
 }
+
 .title{
     display:flex;
     padding-bottom:60px;
@@ -172,7 +169,7 @@ footer{
 }
 
 .about-wrap{
-    diaplay: flex;
+    display: flex;
     flex-wrap:wrap;
     margin-top:60px;
 }
@@ -185,7 +182,7 @@ footer{
     background-color:#fff;
 }
 
-.about-item: nth-child(n+4):nth-child(-n+6){
+.about-item:nth-child(n+4):nth-child(-n+6){
     margin-top:47px;
 }
 
@@ -211,7 +208,7 @@ footer{
 
 #news{
   width:100%;
-  background-image: url("/img/bg2.jpg");
+  background-image: url("/img/bg2.png");
   background-size: cover;
 }
 
@@ -224,7 +221,7 @@ footer{
   content:"";
   width: 30px;
   margin-right:20px;
-  border-top:1px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 .white-title::after{
@@ -275,3 +272,79 @@ footer{
   font-size: 12px;
 }    
  
+#contact{
+  background-image: url("../img/bg3.png");
+  background-size: cover;
+  color: #fff;
+
+}
+
+.contact-wrap{
+  width:600px;
+  margin:0 auto;
+}
+
+#contact .title::before,#contact .title::after{
+  border-color: #FFF;
+}
+
+.contact-caution{
+  margin:60px 0 25px;
+}
+
+.contact-box{
+  margin-bottom:33px;
+}
+
+.contact-text{
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+input,textarea,select{
+  width:100%;
+  border-radius: 7px;
+}
+
+select{
+  appearance: none;
+}
+
+.contact-wrap:nth-of-type(3){
+  position:relative;
+}
+
+.contact-wrap:nth-of-type(3)::after{
+  position:absolute;
+  background:url("../img/arrow.png");
+  background-size: 100%;
+  display:block;
+  content:"";
+  width:15px;
+  height:15px;
+  top:60%;
+  right:15px;
+}
+
+input,select,textarea{
+  width:100%;
+  border-radius:7px;
+  padding:15px;
+}
+
+textarea{
+  height:185px;
+}
+
+.contact-box:nth-of-type(4){
+  margin-bottom:0px;
+}
+.red{
+  color: red;
+  margin-left: 8px;
+}
+
+.caution-red{
+  margin-left:0;
+  margin-right:8px;
+}
