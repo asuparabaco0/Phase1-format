@@ -1,0 +1,82 @@
+#contact{
+    background-image: url("../img/bg3.png");
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5rem;
+
+    .title{
+        color:#fff;
+
+        &::before, &::after{
+            border-color: #fff;
+        }
+    }
+}
+
+.contact-wrap{
+    width:60.0rem;
+    max-width:60.0rem;
+    margin:0 auto;
+    
+}
+
+input,select,textarea{
+    width: 100%;
+    border-radius:.7rem;
+    padding: 1.5rem;
+}
+
+input,select{
+    height: 5.5rem;
+}
+
+select{
+    appearance: none;
+}
+
+textarea{
+    height:18.5rem;
+
+}
+
+.contact-caution{
+    padding-bottom: 2.5rem;
+}
+
+.contact-box{
+    margin-bottom:3.3rem;
+
+    &:nth-of-type(3){
+        position:relative;
+    }
+
+    &:nth-of-type(3)::after{
+        background-image: url("../img/arrow.png");
+        background-size: 100%;
+        position: absolute;
+        content: "";
+        display: block;
+        top: 60%;
+        right: 1.5rem;
+        width:1.5rem;
+        height: 1.5rem;
+    }
+    &:nth-of-type(4){
+        margin-bottom: 0;
+    }
+
+}
+
+.contact-text{
+    margin-bottom:1.0rem;
+}
+
+.red{
+    color:red;
+    margin-left:0.8rem;
+}
+
+.caution-red{
+    margin-left: 0;
+    margin-right: .8rem;
+}
