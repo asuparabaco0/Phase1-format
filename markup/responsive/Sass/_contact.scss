@@ -17,6 +17,13 @@
     width:60.0rem;
     max-width:60.0rem;
     margin:0 auto;
+
+    @include tab{
+        width: 80%;
+    }
+    @include sp{
+        width: 100%;
+    }
     
 }
 
