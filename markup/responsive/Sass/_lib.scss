@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5%
+}
+
+body{
+    font-size: 12px;
+    line-height: 1.67;
+}
+// 色の変数
+$sky:#06BEB6;
+$navy:#283C86;
+
+.inner{
+    width: 80%;
+    margin:0 auto;
+    padding: 9.0rem 0;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 6.0rem;
+
+    &--b{
+        font-weight: bold;
+    }
+
+    &::before{
+        display: inline-block;
+        content:"";
+        width:3rem;
+        border-top: 0.1rem solid #191919;
+        margin-right: 2rem;
+    }
+
+    &::after{
+        @extend .title::before;
+        margin-right:0;
+        margin-left: 2rem;
+    }
+}
