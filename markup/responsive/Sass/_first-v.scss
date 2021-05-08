@@ -6,6 +6,10 @@
     height: 100vh;
     position: relative;
     color:#fff;
+
+    @include tab {
+        display:none;
+    }
 }
 
 .first-v__wrap{
@@ -21,6 +25,12 @@
     align-items: center;
     height: 30%;
     text-align: center;
+
+    @include sp{
+        height: 50%;
+        top:65%;
+        transform: translate(-40%,0);
+    }
 }
 
 .catch{
@@ -50,4 +60,5 @@
         margin-right: 0.5rem;
     }
 }
+
 
