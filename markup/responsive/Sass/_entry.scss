@@ -15,6 +15,10 @@
     left:50%;
     transform: translate(-50%,-50%);
     position: absolute;
+
+    @include sp{
+        width: 90%;
+    }
 }
 
 .entry-copy{
@@ -25,4 +29,5 @@
 .entry-btn{
     @extend .fv-btn;
     width:100%;
+
 }
